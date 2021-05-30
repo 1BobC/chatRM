@@ -3,4 +3,5 @@
 // #137. Connecting to Firebase
 // #138. Chatroom Class & Adding Chats
 //#139. Setting up a Real-time Listener
-// #140. Complex Queries
+// #140. Complex Queries  this set up for eg gaming room
+// #141. Updating the Room & Username
