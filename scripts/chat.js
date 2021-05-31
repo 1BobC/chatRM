@@ -48,29 +48,42 @@ class Chatroom{
             });
     }
     //#141. Updating the Username
-    updateName(usename){
-        this.username = (username);
+    updateName(username){           //NB error I typed 'usename' - see the difference?
+        this.username = username;
     }
     //#141. Updating the Room
     updateRoom(room){
-        this.room = (room);
+        this.room = room;
         console.log('room updated');
         if(this.unsub){             //if this.unsub has no value then an err created
-        this.unsub();               //now it will only be called if true (has a value)
+        this.unsub();               //now it will only be called if this.unsub is true (has a value)
     } 
     }
 
 }
 // #140. Complex Queries this set up for eg gaming room
 // calling functions that are listening for a property and ordering by a property 
- const chatroom = new Chatroom('general');      // calls all general room messages with or without 'name'
- //console.log(chatroom);
+const chatroom = new Chatroom('general', 'freya');      // calls all general room messages with or without 'name'
+ console.log(chatroom);
 //  chatroom.addChat('Hello, New World!')       time to change this!
 //  .then(() => console.log('chat added'))
 //  .catch(err => console.log(err));
-chatroom.getChats(data => {           //arrow function for now
-    console.log(data);
-})
+//  chatroom.getChats(data => {           //arrow function for now
+//      console.log(data);
+//  })
 //#141. Updating the Room
-chatroom.updateRoom('gaming');
+//  chatroom.updateRoom('gaming');   //this works but timeout method representing a user
+// chatroom.getChats((data) => {    //input following say 3 secs of login is used instead
+//     console.log(data);
+// });
+    setTimeout(() => {
+        chatroom.updateRoom('gaming');
+        chatroom.updateName('Kelly');
+        chatroom.getChats((data) => {    //input following say 3 secs of login is used instead
+             console.log(data);
+        });
+        chatroom.addChat('So far - so good!');
+    }, 3000);
+
+
  
