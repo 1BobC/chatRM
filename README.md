@@ -11,4 +11,8 @@ Real Time Chatroom Section 17 starting #135 project preview setup
 "Created composite index via Firebase to order chats by date/time created"
 <!-- #141. Updating the Room & Username -->
 "#141 Updating the Room and Username to 5.48 to be continued!"
-"Complete #141 Updating the Room and Username - NB l52 error I typed 'usename' - see the difference? Next is hookng this all up to the DOM and creating a UI - exciting!"
+"Complete #141 Updating the Room and Username - NB l52 error I typed 'usename' not 'username'- see the difference? Next is hookng this all up to the DOM and creating a UI - exciting!"
+<!-- #142. Creating a ChatUI Class -->
+<!-- #143. Formatting the Dates -->
+<!-- #144. Sending New Chats -->
+"Complete to 1.35 of 144 Remember bug order of script src's on html page"

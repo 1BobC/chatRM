@@ -9,6 +9,9 @@
 //#139. Setting up a Real-time Listener
 // #140. Complex Queries this set up for eg gaming room
 //#141. Updating the Room & Username
+// #142. Creating a ChatUI Class
+// #143. Formatting the Dates
+// #144. Sending New Chats
 
 class Chatroom{
     constructor(room, username){
@@ -63,27 +66,27 @@ class Chatroom{
 }
 // #140. Complex Queries this set up for eg gaming room
 // calling functions that are listening for a property and ordering by a property 
-const chatroom = new Chatroom('general', 'freya');      // calls all general room messages with or without 'name'
- console.log(chatroom);
+// const chatroom = new Chatroom('general', 'freya');      // copied to app.js
+//  console.log(chatroom);
 //  chatroom.addChat('Hello, New World!')       time to change this!
 //  .then(() => console.log('chat added'))
 //  .catch(err => console.log(err));
 //  chatroom.getChats(data => {           //arrow function for now
 //      console.log(data);
 //  })
-//#141. Updating the Room
+//#141. Updating the Room - now deleteddown to 3000 and replaced with UI code
 //  chatroom.updateRoom('gaming');   //this works but timeout method representing a user
 // chatroom.getChats((data) => {    //input following say 3 secs of login is used instead
 //     console.log(data);
 // });
-    setTimeout(() => {
-        chatroom.updateRoom('gaming');
-        chatroom.updateName('Kelly');
-        chatroom.getChats((data) => {    //input following say 3 secs of login is used instead
-             console.log(data);
-        });
-        chatroom.addChat('So far - so good!');
-    }, 3000);
+    // setTimeout(() => {
+    //     chatroom.updateRoom('gaming');
+    //     chatroom.updateName('Kelly');
+    //     chatroom.getChats((data) => {    //input following say 3 secs of login is used instead
+    //          console.log(data);
+    //     });
+    //     chatroom.addChat('So far - so good!');
+    // }, 3000);
 
 
  

@@ -9,6 +9,9 @@ h1{
     /* #139. Setting up a Real-time Listener */
     /* #140. Complex Queries this set up for eg gaming room */
     /* #141. Updating the Room & Username */
+    /* #142. Creating a ChatUI Class */
+    /* #143. Formatting the Dates */
+    /* #144. Sending New Chats */
 .container{
     max-width: 600px;
   }
@@ -20,4 +23,11 @@ h1{
   }
   .btn:focus{
     outline: none !important;
+  }
+  .username{
+    font-weight: bold;
+  }
+  .time{
+    font-size: 0.7em;
+    color: #999;
   }
