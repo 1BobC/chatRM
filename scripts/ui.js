@@ -14,6 +14,9 @@ class ChatUI{
     constructor(list){
         this.list = list;
     }
+    clear(){
+        this.list.innerHTML = '';
+    }
     render(data){
         const when = dateFns.distanceInWordsToNow(
             data.created_at.toDate(),
@@ -33,3 +36,6 @@ class ChatUI{
 
 //#143. Formatting the Dates
 // #144. Sending New Chats
+// #145. Changing Username & Local
+// #146. Updating the Room
+// #147. Testing the App

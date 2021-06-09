@@ -12,6 +12,10 @@ h1{
     /* #142. Creating a ChatUI Class */
     /* #143. Formatting the Dates */
     /* #144. Sending New Chats */
+    /* #145. Changing Username & Local */
+    /* #146. Updating the Room */
+    /* #147. Testing the App */
+
 .container{
     max-width: 600px;
   }
@@ -30,4 +34,8 @@ h1{
   .time{
     font-size: 0.7em;
     color: #999;
+  }
+  .update-mssg{
+    text-align: center;
+    margin-bottom: 20px auto;
   }

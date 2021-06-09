@@ -16,3 +16,7 @@ Real Time Chatroom Section 17 starting #135 project preview setup
 <!-- #143. Formatting the Dates -->
 <!-- #144. Sending New Chats -->
 "Complete to 1.35 of 144 Remember bug order of script src's on html page"
+<!-- #145. Changing Username & Local -->
+<!-- #146. Updating the Room -->
+<!-- #147. Testing the App -->
+"Complete #144 #145 #146 #147 Remember if(e.target.tagName === 'BUTTON'){ and tagname - see it now? Ready to handle authentication in firebase - maybe soon, pleased to see it's available!"

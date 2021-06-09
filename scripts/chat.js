@@ -12,6 +12,9 @@
 // #142. Creating a ChatUI Class
 // #143. Formatting the Dates
 // #144. Sending New Chats
+// #145. Changing Username & Local
+// #146. Updating the Room
+// #147. Testing the App
 
 class Chatroom{
     constructor(room, username){
@@ -53,6 +56,7 @@ class Chatroom{
     //#141. Updating the Username
     updateName(username){           //NB error I typed 'usename' - see the difference?
         this.username = username;
+        localStorage.setItem('username', username);
     }
     //#141. Updating the Room
     updateRoom(room){
